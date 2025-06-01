@@ -21,7 +21,7 @@ def index(request):
 
     if request.method == "POST":
 
-        city1 = request.POST.get('city1', None)
+        city1 = request.POST.get('city', None)
 
         weather_data, daily_forecast = fetch_weather_and_forecast(city1, current_weather_url_v2, forecast_url, geocoding_url)
 
